@@ -1,0 +1,7 @@
+for prisim mask
+
+	need to get every object with in the camera view
+	distort from back to front
+	place back
+
+	depth mask not needed? (might bhe for figuring out initla depth)

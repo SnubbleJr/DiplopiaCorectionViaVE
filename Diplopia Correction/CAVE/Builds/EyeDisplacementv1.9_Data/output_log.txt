@@ -1,0 +1,130 @@
+Mono path[0] = 'D:/Ed/EyeDisplacement Old/EyeDisplacement/Builds/EyeDisplacementv1.9_Data/Managed'
+Mono path[1] = 'D:/Ed/EyeDisplacement Old/EyeDisplacement/Builds/EyeDisplacementv1.9_Data/Mono'
+Mono config path = 'D:/Ed/EyeDisplacement Old/EyeDisplacement/Builds/EyeDisplacementv1.9_Data/Mono/etc'
+PlayerConnection initialized from D:/Ed/EyeDisplacement Old/EyeDisplacement/Builds/EyeDisplacementv1.9_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55119
+Multi-casting "[IP] 128.16.6.112 [Port] 55119 [Flags] 2 [Guid] 2884964676 [EditorId] 1668604973 [Version] 1048832 [Id] WindowsPlayer(mammoth) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [128.16.6.112:55119]
+Initialize engine version: 5.3.3f1 (910d71450a97)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dumx.dll 9.18.13.3523]
+    Renderer: NVIDIA Quadro K5000
+    Vendor:   NVIDIA
+    VRAM:     4027 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.047 seconds
+Platform assembly: D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Ed\EyeDisplacement Old\EyeDisplacement\Builds\EyeDisplacementv1.9_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1400x1050 96Hz; virtual: 5600x1050 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 0.600270 ms
+Server Start
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Thread done...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:106)
+TCPSocketListener:Start() (at D:\Ed\EyeDisplacement 11 04 16\EyeDisplacement\Assets\Scripts\TCPSocketListener.cs:26)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 106)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+sleeping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Setting up 3 worker threads for Enlighten.
+  Thread -> id: 910 -> priority: 1 
+  Thread -> id: 1128 -> priority: 1 
+  Thread -> id: 1b6c -> priority: 1 

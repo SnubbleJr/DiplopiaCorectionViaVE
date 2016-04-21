@@ -1,0 +1,566 @@
+<HTML><HEAD><TITLE>Release History</TITLE></HEAD>
+
+<BODY LINK="#003399" VLINK="#003399"  text="#000000" >
+
+<STYLE>
+<!--
+A { text-decoration:none; }
+P, H4, table, OL, UL, PRE{font-family:Helvetica,Arial; font-size:10pt; color:#000000}
+H2 {font-family:Helvetica,Arial; font-size:14pt; color:#000000}
+H3 {font-family:Helvetica,Arial; font-size:12pt; color:#000000}
+-->
+</STYLE>
+
+<P></P>
+<H2>Release History</H2>
+
+
+<p><B>Version 1.11.900:</B>
+<UL>
+<LI>Added support for EyeLink 1000 Plus recording files.
+<LI>Fixed crashes in loading some EDF files on Mac OSX.
+<LI>Added blink correction for pupil size calculation for PUPIL_SIZE_MIN and PUPIL_SIZE_MEAN variables in the  <A HREF="Exports_trialReport.htm">trial report</A>; now samples during a blink are not included in the pupil size calculation.
+<LI>Added options to exclude some samples before and after a blink event in the pupil size calculation ("Duration to Exclude Before Blinks (msec)" and "Duration to Exclude After Blinks (msec)" in the <A HREF="Pref_dataFilter.htm">Data Filters preferences</A>).
+<LI>Bug fix for handling blink events in some EDF files.
+<LI>Bug fix in handling <A HREF="Protocol_target.htm"> target position commands ("!V TARGET_POS")</A>.
+<LI>Supported saving interest area files in UTF-8 encoding.
+<LI>Added variables to the <A HREF="Exports_IAReport.htm">Interest Area Report</A>: IA_FIRST_SACCADE_INDEX and IA_LAST_SACCADE_INDEX.
+<LI>Bug fix for <A HREF="Exports_IAReport.htm">Interest Area Report</A> variables: IA_FIRST_FIXATION_RUN_INDEX and IA_FIRST_FIXATION_VISITED_IA_COUNT.
+<LI>Added option in the <A HREF="Pref_outputAnalysis.htm">"Output/Analysis Preferences"</A> (Identify first/last saccade based on the first last/last fixation) to match the first/last saccade event to the first/last fixation event in the  <A HREF="Exports_IAReport.htm">Interest Area Report</A>.
+</UL>
+</P>
+
+<p><B>Version 1.11.1:</B>
+<UL>
+<LI> Added support for multiple EDF file loading contained in different directories.
+<LI> <A HREF ="Exports_trialVariables.htm#trialVariableValueEditor">Trial variable value editor </A>now supports copy and paste.
+<LI> Added a "Report Hidden" option for the <A HREF="Windows_trialGrouping.htm">Recording Session</A> and <A HREF="Exports_trialGrouping.htm">trial groups</A>.
+<LI> Added FIXATION_DURATION_MAX, FIXATION_DURATION_MIN, FIXATION_DURATION_MAX_TIME, and FIXATION_DURATION_MIN_TIME to <A HREF="Exports_trialReport.htm">trial report</A>.
+<LI> Added IA_LAST_RUN_DWELL_TIME, IA_LAST_RUN_END_TIME, IA_LAST_RUN_FIXATION_%, IA_LAST_RUN_FIXATION_COUNT, IA_LAST_RUN_START_TIME, IA_LAST_FIXATION_RUN, and IA_THIRD_RUN_FIXATION_COUNT to the <A HREF="Exports_IAReport.htm">interest area report</A>.
+<LI> Fixed various EDF file loading issues.
+<LI> Bug fix for setting the directories in <A HREF="Pref_general.htm">"General Preferences"</A>.
+<LI> Bug fix for displaying non-ASCII characters in the <A HREF="Events_IA.htm">interest area label</A>, <A HREF="Exports_trialVariables.htm">trial variable value editor</A>, and <A HREF="Events_messages.htm">messages</A>.
+</UL>
+</P>
+
+<p><B>Version 1.10.123:</B>
+<UL>
+<LI> Added support for exporting and importing variable selection in the output reports (<A HREF="Exports_trialReport.htm">trial</A>, <A HREF="Exports_fixationReport.htm">fixation</A>, <A HREF="Exports_saccadeReport.htm">saccade</A>, <A HREF="Exports_IAReport.htm">interest area</A>, <A HREF="Exports_sampleReport.htm">sample</A>, and <A HREF="Exports_messageReport.htm">message</A>).
+<LI> Added support for exporting and importing <A HREF="Exports_interestPeriods.htm#creatingInterestPeriods">interest periods</A> across sessions.
+<LI> Added support for exporting and importing <A HREF ="Preferences.htm"> preference settings</A>.
+<LI> Added legend to the grayscale version of <A HREF="Exports_fixationMap.htm">fixation maps</A>.
+</UL>
+</P>
+
+<p><B>Version 1.10.1:</B>
+<UL>
+<LI> This version runs on Windows 2000, XP, Vista, Windows 7, and Mac OSX.
+
+<LI> Better support for non-ASCII characters in the <A HREF="Exports_trialVariables.htm">trial variable value editor</A>, <A HREF="Events_IA.htm">interest area label</A>, <A HREF="Events_messages.htm">messages</A>, and <A HREF="Exporting.htm">report outputs</A>.
+
+<LI> Added "Use UTF-8 Encoding" option to the <A HREF="Pref_outputAnalysis.htm"> "Output/Analysis" preference</A>.
+
+<LI> Bug fix for saving the <A HREF="Windows_animation.htm">animation view</A> with <A HREF="Pref_animation.htm">cyclopean gaze cursor</A>.
+
+</UL>
+</P>
+
+<p><B>Version 1.9.193:</B>
+<UL>
+<LI> Added IA_FIRST_FIXATION_X, IA_FIRST_FIXATION_Y, IA_SECOND_FIXATION_X, IA_SECOND_FIXATION_Y, IA_THIRD_FIXATION_X, IA_THIRD_FIXATION_Y, IA_LAST_FIXATION_X, and IA_LAST_FIXATION_Y variables to the <A HREF="Exports_IAReport.htm">interest area report</A>.
+
+<LI> Added CURRENT_MSG_INTEREST_AREAS, CURRENT_MSG_INTEREST_AREA_INDEX, and CURRENT_MSG_INTEREST_AREA_LABEL to the <A HREF="Exports_messageReport.htm">message report</A>.
+
+<LI> Added LAST_BUTTON_RELEASED, LAST_BUTTON_PRESS_TIME, and LAST_BUTTON_RELEASE_TIME to the <A HREF="Exports_fixationReport.htm">fixation report</A>.  The LAST_BUTTON_TIME variable now returns the time when the last button is pressed or released.
+
+<LI> Added PUPIL_SIZE_MIN_X,PUPIL_SIZE_MIN_Y,PUPIL_SIZE_MIN_TIME, and VISITED_INTEREST_AREA_COUNT to the <A HREF="Exports_trialReport.htm">trial report</A>.
+
+<LI> Bug fix for interest period selection if the end time of the <A HREF="Exports_interestPeriods.htm">interest period </A> is equal to the start time of a fixation event.
+
+</UL>
+</P>
+
+<p><B>Version 1.9.1:</B>
+<UL>
+<LI> <A HREF="Exports_fixationMap.htm">Fixation map/heat map</A> is completely redone with the following modifications:
+<UL>
+	<LI> Four variants of fixation maps are provided: 1 = based on duration; 2 = based on fixation count; 3 = based on count density; and 4 = based on duration density.
+	<LI> A fixation map color legend is provided.
+	<LI> Renamed "Minimum Contrast Multiplier" option in the <A HREF="Pref_outputAnalysis.htm">fixation map preference settings</A> to "Low Activity % Cut-off".
+	<LI> Supported drawing a title.
+	<LI> Transparency setting supported.
+	<LI> Option added to customize the Low, Medium, and High activity colors.
+	<LI> Option added to set a fixed maximum and minimum value for heatmap scale.
+</UL>
+<LI> The compressed EDF files collected on EyeLink CL eye trackers are now supported.
+<LI> Added TRIAL_INDEX variable to the <A HREF="Exports_fixationReport.htm">fixation</A>, <A HREF="Exports_saccadeReport.htm">saccade</A>, <A HREF="Exports_sampleReport.htm">sample</A>, <A HREF="Exports_messageReport.htm">message</A>, and <A HREF="Exports_IAReport.htm">interest area reports</A>.
+<LI> Added IA_FIRST_FIXATION_INDEX, IA_FIRST_FIXATION_RUN_INDEX, and IA_FIRST_FIXATION_VISITED_IA_COUNT variables to the <A HREF="Exports_IAReport.htm">interest area report</A>.
+</UL>
+</P>
+
+
+<p><B>Version 1.8.599:</B>
+<UL>
+<LI> Added the following variables to the <A HREF="Exports_fixationReport.htm">fixation report</A> and <A HREF="Exports_saccadeReport.htm">saccade report</A>: CURRENT/NEXT/PREVIOUS_SAC_END_INTEREST_AREA_INDEX, CURRENT/NEXT/PREVIOUS_SAC_END_INTEREST_AREA_LABEL, CURRENT/NEXT/PREVIOUS_SAC_START_INTEREST_AREA_INDEX, and CURRENT/NEXT/PREVIOUS_SAC_START_INTEREST_AREA_LABEL. </A>
+
+<LI> Added the following variables to the <A HREF="Exports_saccadeReport.htm">saccade report</A>: TRIAL_SACCADE_TOTAL. </A>
+</UL>
+</P>
+
+
+<p><B>Version 1.8.547:</B>
+<UL>
+<LI> Bug fix for the calculation of <A HREF="Exports_IAReport.htm#IAReportVariables">IA_AREA </A>measure for <A HREF="Events_IA.htm#manuallyCreating">freehand interest areas</A>.
+</UL>
+</P>
+
+<p><B>Version 1.8.522:</B>
+<UL>
+<LI> Bug fix for the "Trim Spanned Fixation Times" in the <A HREF="Pref_dataFilter.htm">Data Filters preferences</A>.
+<LI> Bug fix for loading EDF files with 2000 hz recordings.
+<LI> Added the following variables to the <A HREF="Exports_fixationReport.htm">fixation report</A> and <A HREF="Exports_saccadeReport.htm">saccade report</A>: CURRENT/NEXT/PREVIOUS_SAC_CONTAINS_BLINK. </A>.
+<LI> Added the following variables to the <A HREF="Exports_fixationReport.htm">fixation report</A> and <A HREF="Exports_saccadeReport.htm">saccade report</A>: CURRENT/NEXT/PREVIOUS_FIX_X_RESOLUTION, CURRENT/NEXT/PREVIOUS_FIX_Y_RESOLUTION, CURRENT/NEXT/PREVIOUS_SAC_START_X_RESOLUTION, CURRENT/NEXT/PREVIOUS_SAC_START_Y_RESOLUTION, CURRENT/NEXT/PREVIOUS_SAC_END_X_RESOLUTION, and CURRENT/NEXT/PREVIOUS_SAC_END_Y_RESOLUTION. </A>.
+</UL>
+</P>
+
+
+<p><B>Version 1.8.497:</B>
+<UL>
+<LI> Added "Collapse Identical Interest Areas with Different Time Stamps" option to the <A HREF="Pref_dataLoading.htm">Data Loading Preferences</A>.
+</UL>
+</P>
+
+<p><B>Version 1.8.402:</B>
+<UL>
+<LI> Added a vertical scrollbar to the <A HREF="Windows_temporalGraph.htm">Temporal Graph View</A>.
+
+<LI> Bug fixes for <A HREF="Events_messages.htm#importingMessages">message loading</A> and interest area integration.
+
+<LI> Improved video saving capability in the <A HREF="Windows_animation.htm">animation view</A>.
+</UL>
+</P>
+
+<p><B>Version 1.8.375:</B>
+<UL>
+<LI> Improved memory usage when creating reports.
+
+<LI> Fixed the "Could not open EDF file or the EDF file is corrupted" bug caused by an installer problem.
+</UL>
+</P>
+
+
+<p><B>Version 1.8.221:</B>
+<UL>
+<LI> Supported loading of EyeLink Remote files.  Added the following variables "HTARGET_DISTANCE", "HTARGET_X", "HTARGET_Y", and "HTARGET_FLAGS" to the <A HREF="Exports_sampleReport.htm">Sample Report</A> to extract head target information.
+
+<LI> Supported showing a cyclopean gaze cursor in <A HREF="Windows_animation.htm">the animation view </A>for binocular recordings. Added an option "Use Cyclopean Gaze if binocular" to the <A HREF="Pref_animation.htm">Animation View Preferences</A>.
+</UL>
+</P>
+
+
+<p><B>Version 1.8.1:</B>
+<UL>
+<LI> Supported loading of EyeLink 2K EDF files (with 2000 hz sampling rate).
+
+<LI> Added a "Trim Spanned Fixation Times" option to the <A HREF="Pref_dataFilter.htm">Data Filters preference</A>.
+
+<LI> Added the following variables "IA_LEGAL", "IA_SKIP", and "IA_SPILLOVER" to the <A HREF="Exports_IAReport.htm">Interest Area Report</A>.
+
+<LI> Added "CURRENT_FIX_LABEL", "PREVIOUS_FIX_LABEL", "NEXT_FIX_LABEL", "CURRENT_SAC_LABEL", "PREVIOUS_SAC_LABEL", and "NEXT_SAC_LABEL" variables to the <A HREF="Exports_fixationReport.htm">fixation report</A> and <A HREF="Exports_saccadeReport.htm">saccade report</A>.
+
+<LI> Added "PUPIL_SIZE_MAX_X", "PUPIL_SIZE_MAX_Y", and "PUPIL_SIZE_MAX_TIME" to <A HREF="Exports_trialReport.htm"> trial report</A>.
+
+<LI> A <A HREF="Events_fixations.htm#cleaningFixations">four-stage fixation cleaning option</A> is now provided; this option is intended for some reading applications.
+
+<LI> Fixation map saving now supports the color head-map mode.  A "Heat Map Mode" option is added to the <A HREF="Pref_outputAnalysis.htm">Output/Analysis Preferences</A>.
+
+<LI> Fixed a bug with Video playback in the <A HREF="Windows_animation.htm"> animation view</A>.
+
+<LI> Saved Data Viewing session name is now displayed in the program title bar.
+
+<LI> Hiding events is no longer supported for events.
+
+<LI> Fixed bugs associated with interest period filtering when different <A HREF="Exports_interestPeriods.htm">interest periods</A> are selected.
+
+</UL>
+
+<p><B>Version 1.7.160:</B>
+<UL>
+<LI> Fixed "IA_REGRESSION_OUT_COUNT" and "IA_REGRESSION_OUT_FULL_COUNT" bug in <A HREF="Exports_IAReport.htm">Interest Area output report</A>.
+</UL>
+
+
+
+<p><B>Version 1.7.91:</B>
+<UL>
+<LI>Added an "EYE_USED" variable to the <A HREF="Exports_trialReport.htm">trial report</A>, <A HREF="Exports_saccadeReport.htm">saccade report</A>, <A HREF="Exports_fixationReport.htm">fixation report</A>, and <A HREF="Exports_IAReport.htm">interest area report</A>, and <A HREF="Exports_messageReport.htm">message report</A>.
+
+<LI>Added "CURRENT_FIX_INTEREST_AREA_X_OFFSET" and "CURRENT_FIX_INTEREST_AREA_Y_OFFSET" to the <A HREF="Exports_fixationReport.htm">fixation report</A>.
+
+<LI>Added "IA_REGRESSION_OUT_FULL" and "IA_REGRESSION_OUT_FULL_COUNT" to <A HREF="Exports_IAReport.htm">interest area report</A>.
+
+<LI>Fixed a bug with incomplete output reports introduced by version 1.7.1.
+</UL>
+
+<p><B>Version 1.7.152:</B>
+
+<UL><LI> Fixed BLINK_AROUND bug in <A HREF="Exports_fixationReport.htm">Fixation output report</A>. Now BEFOR, AFTER, and BOTH blink location types are reported.
+</UL>
+
+<p><B>Version 1.7.1:</B>
+<UL>
+<LI>Added a <A HREF="Exports_messageReport.htm">Message Report</A>.
+<LI>Greatly improved disk space needed to <A HREF="Files_saveDVS.htm">save a DVS</A>. <B>Important</B>: Effective from version 1.7.1, a later version of Data Viewer software can be used to open a viewing session saved with earlier versions.  However, an earlier version of DV software cannot be used to open a viewing session created with latest version of software.
+<LI>Provided a memory usage indicator for a viewing session in the <A HREF="Windows_inspector.htm">Inspector Window</A>.
+<LI>To improve the Data Viewer performance, selection of the events is not memeorized when going through various trials. As a result, the following variables are removed from the <A HREF="Exports_fixationReport.htm">fixation</A> and <A HREF="Exports_saccadeReport.htm">saccade output reports</A>: "CURRENT_SAC_SELECTED", "PREVIOUS_SAC_SELECTED", "NEXT_SAC_SELECTED", "CURRENT_FIX_SELECTED", "NEXT_FIX_SELECTED", "PREVIOUS_FIX_SELECTED".
+<LI>Removed "Fully Load Trials into Memory" option from the <A HREF="Pref_dataLoading.htm">Data Loading preferences</A>. Now it is always false.
+<LI>"Load Samples" in the <A HREF="Pref_dataLoading.htm">Data Loading preferences</A> is false by default.  <A HREF="Exports_sampleReport.htm">Sample output report</A> will be empty if the samples are not loaded.
+<LI>Added <A HREF="Exports_RTDefinitions.htm#reactionTimeManager">"Override Custom Reaction time definitions"</A> option to <A HREF="Exports_RTDefinitions.htm">Reaction Time Manager</A>.
+<LI>Added an "IP_LABEL" variable to the Data Viewer <A HREF="Exports_trialReport.htm">trial report</A>, <A HREF="Exports_saccadeReport.htm">saccade report</A>, <A HREF="Exports_fixationReport.htm">fixation report</A>, and <A HREF="Exports_IAReport.htm">interest area report</A>.
+<LI>Added "IP_LABEL", "IP_START_TIME", "IP_END_TIME", and "IP_DURATION" to <A HREF="Exports_sampleReport.htm">sample report</A>.
+<LI>Changes are made to the <A HREF="Pref_dataFilter.htm">"Data Filter" preferences</A> so that the fixation/saccade filtering is turned off by default. Now, the "Merge Nearby Fixations" of the Data Filter preference is set to False by default; the "Fixation Duration Threshold" is set to 0.
+<LI>EDF files with same file name can not be <A HREF="Files_importEDF.htm">imported </A>more than once in the same viewing session.
+<LI>Fixed a bug with velocity calculation for the <A HREF="Exports_sampleReport.htm">sample reports</A> introduced in version 1.6.67.
+</UL>
+
+
+
+
+
+<p><B>Version 1.6.67:</B>
+
+<ul>
+<LI>Supported loading of EyeLink 1000 EDF files.
+
+<LI>Fixed a bug with saving viewing session files introduced by version 1.6.1.
+
+<LI>Implemented new velocity and acceleration calculation algorithms.
+
+<LI>Added "Missing Value" and "Decimal Places" settings in the  <A HREF="Pref_outputAnalysis.htm">Output/Analysis Preference settings</A>.
+
+<LI>Added "Display Frame Number" setting in the  <A HREF="Pref_animation.htm">Animation Preference settings</A>.
+
+<LI>Added file extension filter for saving video files in the <A HREF="Windows_animation.htm">animation playback view</A>.
+
+<LI> Added following the variables to <A HREF="Exports_saccadeReport.htm">Saccade Output report</A>:
+<BR>CURRENT_SAC_PEAK_VELOCITY_TIME: EDF time of the sample with peak velocity in the current saccade.
+<BR>PREVIOUS_SAC_PEAK_VELOCITY_TIME: EDF time of the sample with peak velocity in the previous saccade.
+<BR>NEXT_SAC_PEAK_VELOCITY_TIME: EDF time of the sample with peak velocity in the next saccade.
+</UL>
+
+
+
+<p><B>Version 1.6.1:</B>
+
+<ul>
+
+<LI>Removed "PDF Help Viewer", "Exported Data Viewer", and "Auto Find Helper Program" options from the <A HREF="Pref_general.htm">General Preference settings</A>.
+
+<LI>Added "Default Report Directory" in the <A HREF="Pref_general.htm">General Preference settings</A> for outputting reports.
+
+<LI>Added file extension filter for report outputs.
+<LI> Added following variables to <A HREF="Exports_fixationReport.htm">Fixation Output report</A>:
+<BR>CURRENT_FIX_END_OTHER: Trial time when the current fixation ends (<A HREF="Pref_general.htm">on the other eye in a binocular recording</A>).
+<BR>CURRENT_FIX_START_OTHER = Trial time when the current fixation starts (on the other eye in a binocular recording).
+<BR>CURRENT_FIX_X_OTHER = X coordinate of the current fixation (on the other eye in a binocular recording).
+<BR>CURRENT_FIX_Y_OTHER = Y coordinate of the current fixation (on the other eye in a binocular recording).
+
+</UL>
+
+<P><B>Version 1.5.13:</B>
+<UL>
+<LI> Fixed an issue that would cause an EDF file not to load if a <A HREF="Protocol_RT.htm">RT viewer command message </A>was in the file that had an incorrect format. Now the command is simply ignored if the format is incorrect.
+</UL>
+
+
+<P><B>Version 1.5.6:</B>
+
+<UL>
+<LI> Updated licensing to support simultaneous use with Experiment Builder software on appropriately licensed installations
+
+<LI> Added new features to provide base level of SceneLink integration:
+
+<UL>
+<LI>To load data files using the SceneLink gaze mapping, set the following preferences to true:
+
+<BR>Preferences -> Data Loading -> Enable SceneLink Gaze Mapping
+<BR>Preferences -> Data Loading -> Generate SceneLink Frame Messages
+
+<BR>Then import the data files. Be sure that you have already created the lookup tables for the trials in SceneLink.
+
+<LI> You can see the SceneLink frame messages in the event list by enabling the following pref:
+
+<BR>Preferences -> Data Filters -> Include Display Command Messages
+
+<BR>and turning on the Message Event Visibility.  The frame messages will appear as VFRAME commands, with text of:
+
+<BR>	frame_number video_file
+
+<BR>where frame_number is the frame index in the video specified by video_file. Indexes start at 1
+
+<LI> Added the following variables to <A HREF="Exports_fixationReport.htm">Fixation and Saccade reports:</A>
+
+<BR>VIDEO_FRAME_INDEX_START = Index of the video frame that was visible at the start of the eye event.
+<BR>VIDEO_FRAME_INDEX_END = Index of the video frame that was visible at the end of the eye event.
+<BR>VIDEO_NAME_START = Name of the video frame that was visible at the start of the eye event.
+<BR>VIDEO_NAME_END = Name of the video frame that was visible at the end of the eye event.
+
+<LI>Added the following variables to <A HREF="Exports_sampleReport.htm">Sample Report:</A>
+
+<BR>VIDEO_FRAME_INDEX = Index of the video frame that was visible at the sample time.
+<BR>VIDEO_NAME = Name of the video frame that was visible at the sample time.
+</UL>
+</UL>
+
+<P><B>Version 1.4.281:</B>
+<UL>
+<LI> Fixed problem with <A HREF="Exports_IAReport.htm">Interest Area output report</A> REGRESSION_OUT variables that was causing incorrect regression out counts to be stated. Prior to this version some IA that did have first pass regression outs were reporting no regression outs.
+</UL>
+
+
+<P><B>Version 1.4.280:</B>
+<UL>
+<LI>  Supported playing back video clips in the <A HREF="Windows_animation.htm">animation view</A> for Experiment Builder recordings.  Current limitations:
+<UL>
+   <LI> Only one video clip can be presented in the Animation view at a time.
+   <LI> If display contains a video resource, then non video resources will not be displayed in animation view playback.
+   <LI> Can not save Animation View as an .avi file when a video clip is present.
+   <LI> If video clip is in XVID format, a P4 CPU is required for playback in Data Viewer.
+</UL>
+</UL>
+
+
+<P><B>Version 1.4.265:</B>
+<UL>
+<LI> Fixed <A HREF="Events_IA.htm">Interest Area Template </A>bug introduced in 1.4.255
+<LI> Fixed incorrect reporting of recording mode and speed in <A HREF="Windows_trialGrouping.htm">session properties table</A>.
+<LI> Added following variables to <A HREF="Exports_IAReport.htm">Interest Area Output report</A>:
+<BR>    IA_LEFT: left side pixel position of non-freehand IA
+<BR>    IA_TOP: top side pixel position of non-freehand IA
+<BR>    IA_RIGHT: right side pixel position of non-freehand IA
+<BR>    IA_BOTTOM: bottom side pixel position of non-freehand IA
+<BR>    IA_POINTS: x,y point list for freehand Interest Areas
+</UL>
+
+
+<P><B>Version 1.4.255:</B>
+<UL>
+<LI> Greatly improved performance for <A HREF="Exports_IAReport.htm">Interest Area report </A>processing.
+<LI> Fixed report processing exception with some reopenned DVS files
+<LI> Fixed installer issue with EDF Converter GUI.
+</UL>
+
+
+
+
+<p><B>Version 1.4.17:</B>
+
+<ul>
+
+<LI>Added "Group" label for <A HREF="Events_IA.htm">interest areas</A>.
+
+<LI>Supported <A HREF="Events_IA.htm#mergingIA">merging rectangular interest areas</A>.
+
+<LI>Added IP_START_TIME, IP_END_TIME, IA_FIRST_RUN_FIXATION_COUNT, IA_SECOND_RUN_FIXATION_COUNT, and IA_GROUP to <A HREF="Exports_IAReport.htm">interest area output report</A>.  These variables represent EDF time of start end end of active <A HREF="Exports_interestPeriods.htm">Interest Period</A>.
+
+<LI>Added IP_START_TIME, IP_END_TIME, and CURRENT_/NEXT_/PREVIOUS_FIXATION_INTEREST_AREA_GROUP to <A HREF="Exports_fixationReport.htm">fixation output report</A>.
+
+<LI>Added IP_START_TIME, and IP_END_TIME to <A HREF="Exports_saccadeReport.htm">saccade output report</A>.
+
+</UL>
+
+<p><B>Version 1.3.60:</B>
+
+<ul>
+<LI>Added "<A HREF="Exports_interestPeriods.htm#interestPeriodDuration">Duration Based</A>" <A HREF="Exports_interestPeriods.htm">Interest Period</A> type.
+
+<LI>Added <A HREF="Exports_interestPeriods.htm#creatingInterestPeriods">start time and end time offset fields</A> to Interest Period.
+
+<LI>Added IP_START_TIME and IP_END_TIME and IP_DURATION to <A HREF="Exports_trialReport.htm">trial output report</A>.  These variables represent EDF time of start end end of active <A HREF="Exports_interestPeriods.htm">Interest Period</A>.
+
+<LI>Added following variables to <A HREF="Exports_IAReport.htm#IAReportVariables">IA report</A> for <A HREF="Exports_IAReport.htm#fixationSequenceAnalysis">fixation sequence analysis</A>. If used, n columns are output in the report, where n is equal to the number of unique IA ID's in the data viewing session. Column lables are the variable name with "_IA_ID" appended to it, where IA_ID is the ID of the given IA.
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_BSA_COUNT defines the number of times a fixation n started in the current row IA and fixation n+fixation_skip_count was in the current column IA.</span></td>
+</tr>
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IIA_BSA_DURATION defines the sum of fixation durations for fixation n+fixation_skip_count where fixation n started in the current row IA and fixation n+fixation_skip_count was in the current column IA.</span></td>
+</tr>
+</table>
+ <B>If you have lots of interest areas in a trial, including IA_FSA_COUNT and IA_FSA_DURATION in the output report may take a very long time for the Viewer to generate the report.</B>
+
+<LI>Added "Fixation Skip Count" property to <A HREF="Pref_outputAnalysis.htm">Output / Analysis</A> section of preference settings. Default is 1. Can not be less than 1. Defines the number of fixations to skip when looking for the next IA to use in the <A HREF="Exports_IAReport.htm#fixationSequenceAnalysis">fixation sequence analysis</A> output variables of the IA report.
+
+<LI> Added the following <A HREF="Exports_IAReport.htm#IAReportVariables">variables</A> to <A HREF="Exports_IAReport.htm">interest area report</A> for <A HREF="Exports_IAReport.htm#regressionAnalysis">regression analysis</A>:
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_SECOND_FIXATION_TIME - time of second fixation in IA, regardless of run</span></td>
+</tr>
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_THIRD_FIXATION_TIME - time of third fixation in IA, regardless of run</span></td>
+</tr>
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_SECOND_FIXATION_DURATION- duration of second fixation in IA, regardless of run</span></td>
+</tr>
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_THIRD_FIXATION_DURATION- duration of third fixation in IA, regardless of run</span></td>
+</tr>
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_SECOND_FIXATION_RUN - index of run that second fixation is in</span></td>
+</tr>
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_THIRD_FIXATION_RUN - index of run that third fixation is in</span></td>
+</tr>
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_FIRST_FIX_PROGRESSIVE - 1 if NO higher IA ID in earlier fixations than first IA fixation; 0
+otherwise </span></td>
+</tr>
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_REGRESSION_PATH_DURATION - the summed fixation duration from when the IA is first fixated until the eyes enter a IA with a larger ID than the starting IA.</span></td>
+</tr>
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_REGRESSION_OUT - 0 if IA was not exited to a lower IA ID (to the left in english); 1 if it was</span></td>
+</tr>
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_SELECTIVE_REGRESSION_PATH_DURATION - only includes fixation and refixations of the same IA
+before the eyes enter an IA with a larger ID</span></td>
+</tr>
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_REGRESSION_IN - 0 if IA was not entered from a higher IA ID (from the right in english); 1 if it was</span></td>
+</tr>
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_REGRESSION_OUT_COUNT - number of times IA was exited to a lower IA ID (to the left in english);</span></td>
+</tr>
+<tr>
+	<td width = 20></td>
+	<td> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+	IA_REGRESSION_IN_COUNT - number of times IA was entered from a higher IA ID (from the left in english);</span></td>
+</tr>
+
+</table>
+
+<LI> Added progress bar for report creation.  Cancelling progress bar cancelling report creation (<A HREF="Exports_IAReport.htm#usingIAReport">example</A> ).
+
+
+</UL>
+
+<p><B>Version 1.3.35:</B>
+
+<ul>
+<LI>- Added "Auto Select IAS for Trial" property to <A HREF="Pref_outputAnalysis.htm"> Output / Analysis Preference Settings</A>. Default is false. If true then trial interest area set association is done <A HREF="Events_IA.htm#IANameMapping"> automatically by using "Image Name mapping" attribute </A> of <A HREF="Windows_IATemplate.htm"> Interest Area Set Template</A> in the Data Viewer session.
+<LI>- Added "Image Name mapping" field to <A HREF="Windows_IATemplate.htm"> Interest Area Set Template</A>.  If there is a value in the "Image Name mapping" field and "auto Select IAS for Trial" property is true, then this value is used to <A HREF="Events_IA.htm#IANameMapping"> automatically associate the interest area set to trials</A>. If the last Data Viewer <A HREF="Protocol_image.htm">image load command </A>entered in a trial contains a image name that contains the "Image Name mapping" text of the IAS, then the IAS is associated with the trial.  Matching is case sensitive. The "Image Name mapping" text does not need to be the full image name in the trial though.  If no matching "Image Name mapping" text was found for the trial in any IAS template, then the trial's IAS is set to the default empty IAS template.
+<LI>- Added "Maximum Graphics Commands to process" preference in the <A HREF="Pref_spatialOverlay.htm">Data Views->Overlay preference settings</A>. -1 = process all <A HREF="Protocol_trial.htm#graphicCommands">graphics commands</A>; else = process the number of graphics commands specified when <A HREF="Windows_spatialOverlay.htm#imageChange">creating background image</A> for <A HREF="Windows_spatialOverlay.htm"> overlay view</A>.
+<LI>- Added "Fit Overlay Image Change to Display" preference in the <A HREF="Pref_spatialOverlay.htm">Data Views->Overlay preference settings</A>. If True, when the background image for a trial is manually changed, the image is scaled to fit the display dimensions for the trial.  If false, the image size is not altered and the image is centred on the trial overlay view.
+<LI>- Added <A HREF="Protocol_trial.htm#trialVariable">single trial variable message token command</A>. The <A HREF="Pref_dataLoading.htm">default value</A> is "TRIAL_VAR".  This command lets the user specify a <A HREF="Exports_trialVariables.htm#trialVariableValueEditor">trial variable and value</A> for the given trial.
+<LI>- Added following variables to <A HREF="Exports_IAReport.htm#IAReportVariables">IA report</A> to represent the average, minimum, and maximum fixation pupil size:
+	<BR>IA_AVERAGE_FIX_PUPIL_SIZE,
+	<BR>IA_MAX_FIX_PUPIL_SIZE,
+	<BR>IA_MIN_FIX_PUPIL_SIZE.
+</ul>
+
+<p><B>Version 1.3.0:</B>
+<ul>
+<LI>- Added <A HREF="Exports_sampleReport.htm">sample output report </A>.
+<LI>- Added ability to <A HREF="Events_messages.htm#importingMessages">load a set of messages</A> into an EDF file in the data viewer. This is done by using the "Import Message List" pop-up menu item when a EDF file is selected in the tree view.
+<LI>- Added TRIAL_START_TIME variable to <A HREF="Exports_fixationReport.htm#fixationReportVariables">fixation</A>, <A HREF="Exports_saccadeReport.htm#saccadeReportVariables">saccade</A>, and <A HREF="Exports_IAReport.htm#IAReportVariables">IA</A> reports
+<LI>- Changed all eye event start and end times in IA report to be relative to trial start instead of absolute
+<LI>- Added following variables to <A HREF="Exports_IAReport.htm#IAReportVariables">IA report</A>:
+	<BR>IA_SECOND_RUN_FIXATION_%
+	<BR>IA_SECOND_RUN_DWELL_TIME
+	<BR>IA_THIRD_RUN_FIXATION_%
+	<BR>IA_THIRD_RUN_DWELL_TIME
+	<BR>IA_FIRST_RUN_START_TIME
+	<BR>IA_SECOND_RUN_START_TIME
+	<BR>IA_THIRD_RUN_START_TIME
+	<BR>IA_FIRST_RUN_END_TIME
+	<BR>IA_SECOND_RUN_END_TIME
+	<BR>IA_THIRD_RUN_END_TIME
+<LI>- Added following variables to <A HREF="Exports_trialReport.htm#trialReportVariables">Trial report</A>:
+	<BR>PUPIL_SIZE_MIN
+	<BR>PUPIL_SIZE_MAX
+	<BR>PUPIL_SIZE_MEAN
+<LI>- The user can now <A HREF="Events_IA.htm#deletingIATemplate">delete interest area template </A> from IA template list. If a trial is using the template; the trial IAS is set to the empty template.
+<LI>- Added <A HREF="Protocol_target.htm">targetPositionString</A> to <A HREF="Pref_dataLoading.htm">data loading preference settings</A>. Defines the message text to match on for target position extraction.
+<LI>- Added ability to plot accelleration and velocity traces in <A HREF="Windows_temporalGraph.htm#viewingData"> trial temporal graph view </A>
+<LI>- Added target1 and target2 trace buttons to trial temporal graph view
+<LI>- In <A HREF="Exports_trialReport.htm#trialReportVariables">Trial output report</A>, REACTION_TIME variable is retrned as a '.' if the trial does not have an RT end event.
+<LI>- Can now <A HREF="Files_importEDF.htm">load multiple EDF files</A> at once.  Each file is processed in sequence.
+<LI>- Changed the extension of the output file: if any output report name does not contain a '.xxx', where xxx are any 3 characters, then the file name is appended with a '.txt'.
+<LI>- Interest Area Set files now treats any line with a # as a comment
+<LI>- If lastDirectoryAccessed is not null, this is now used as starting directory for IAS importing
+<LI>- Can now <A HREF="Events_IA.htm#loadingIA">load multiple interest area template </A> files at once;
+<LI>- Default IA set directory <A HREF="Pref_general.htm">preference </A>added. Changes to this preference only take effect on files loaded AFTER the change.
+<LI>- Default image loading directory now supports image paths that use / or \ as file seperator in message text
+<LI>- Can now <A HREF="Windows_animation.htm#savemovie">save the trial playback </A> into a QuickTime .mov file or an uncompressed .AVI file.
+<LI>- Fixed a bug which closes an EyeLink Data Viewer session when loading an EDF file with non-latin characters in the file name or path.
+<LI>- Can now display non-latin characters contained in the EDF messages when running Data Viewer in the intended non-English operating systems.
+</ul>
+
+<p><B>Version 1.2.452:</B>
+<ul>
+<LI>- Added time attribute to InterestArea class.  This is used to filter IAs based on the current selected IP.
+<LI>- Added two properties to the <A HREF="Pref_dataFilter.htm">Filter Viewer properties section</A>:
+	<BR>"Show Interest Areas Pre Interest Period "
+    <BR>"Show Interest Areas Post Interest Period "
+</ul>
+
+<p><B>Version 1.2.420:</B>
+<ul>
+<LI>- Fixed bug in helper application path search that was causing it to run every time the app. was started. Fixes were all made in the ViewerProperties.java
+<LI>- Added attribute to Viewer Preferences panel -> General, that lets you specific if helper applications should be searched for or not.
+<LI>- Added all these to <A HREF="Exports_IAReport.htm#IAReportVariables">IA report</A>:
+	<BR>IA_FIRST_FIXATION_DURATION
+	<BR>IA_LAST_FIXATION_DURATION
+	<BR>IA_FIRST_RUN_DWELL_TIME
+	<BR>IA_FIRST_RUN_FIXATION_%
+	<BR>IA_FIRST_SACCADE_START_TIME
+	<BR>IA_FIRST_SACCADE_END_TIME
+	<BR>IA_LAST_SACCADE_START_TIME
+	<BR>IA_LAST_SACCADE_END_TIME
+</ul>
+
+<p><B>Version 1.2.391:</B>
+<ul>
+<LI>- Added IA_AREA variable to <A HREF="Exports_IAReport.htm#IAReportVariables">IA report</A> and to IA object
+<LI>- Added IA_FIRST_FIXATION_TIME to IA output report
+<LI>- Added IA_LAST_FIXATION_TIME to IA output report
+<LI>- Added IA_RUN_COUNT to IA output report
+<LI>- Fixed bug in fixation moving functionality that would cause exception if the fixation being moved did not have a saccade object on either side of it in the event list.
+</ul>
+
+
+
+<P></P>
+
+<H4><HR>&#169; 2002-2013  SR Research Ltd., Mississauga, Ontario, Canada.</H4>
+
+
+</BODY></HTML>

@@ -1,0 +1,7 @@
+after calibration ont he screen, go to the cave and get user to look at point right infront of them, this gives the 0,0
+
+then compare 2 different ways of finding the rot:
+
+either difference in 2 values + current total
+
+or current angle - reference
