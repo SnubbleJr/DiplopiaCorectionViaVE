@@ -4,6 +4,8 @@ using System.Net.Sockets;
 using System.IO;
 using System.Collections.Generic;
 
+// Using code from http://answers.unity3d.com/questions/12329/server-tcp-network-problem.html
+
 public class TCPSocketListener : MonoBehaviour
 {
     public string iPAddress = "192.168.2.67"; // "128.16.6.112";
